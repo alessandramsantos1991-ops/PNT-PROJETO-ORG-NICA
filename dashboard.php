@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,49 +25,45 @@
             <ul class="menu"> 
 
                 <li> 
-                    <a href="index.html">Home</a> 
+                    <a href="index.php">Home</a> 
                 </li> 
                 
                 <li> 
-                    <a href="dashboard.html">Dashboard</a> 
+                    <a href="dashboard.php">Dashboard</a> 
                 </li> 
                 
                  <li> 
-                    <a href="produtos.html">Produtos</a> 
+                    <a href="produtos.php">Produtos</a> 
                     
                     <ul class="submenu"> 
-
-                        <li> 
-                            <a href="cesta.html">Cestas</a> 
-                        </li> 
                         
                         <li> 
-                            <a href="frutas.html">Frutas</a> 
+                            <a href="pequena.php">Pequena</a> 
                         </li> 
 
                         <li> 
-                            <a href="verduras.html">Verduras</a> 
+                            <a href="media.php">Média</a> 
 
                         </li> 
                         
                         <li>
-                            <a href="legumes.hml">Legumes</a>
+                            <a href="grande.php">Grande</a>
                         </li>
                     </ul> 
                 </li> 
 
                 <li> 
-                    <a href="sobre.html">Sobre</a>
+                    <a href="sobre.php">Sobre</a>
 
                 </li> 
 
                 <li> 
-                    <a href="contato.html">Contato</a> 
+                    <a href="contato.php">Contato</a> 
 
                 </li> 
 
                 <li> 
-                    <a href="login.html">Sair</a> 
+                    <a href="login.php">Sair</a> 
 
                 </li> 
 
@@ -91,6 +91,8 @@
 <footer>
     <p>© 2026 ORGÂNICA 🌱 - Produtos Naturais</p>
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,6 +12,10 @@
 </head>
 <body>
 
+    <script>
+    alert("JavaScript está funcionando!");
+</script>
+
     <header>
 
     <div class="logo">
@@ -17,57 +25,36 @@
     </div>
 
     <nav>
-            <ul class="menu"> 
+    <ul class="menu">
 
-                <li> 
-                    <a href="index.html">Home</a> 
-                </li> 
-                
-                <li> 
-                    <a href="dashboard.html">Dashboard</a> 
-                </li> 
-                
-                 <li> 
-                    <a href="produtos.html">Produtos</a> 
-                    
-                    <ul class="submenu"> 
+        <li>
+            <a href="index.php">Home</a>
+        </li>
 
-                        <li> 
-                            <a href="cesta.html">Cestas</a> 
-                        </li> 
-                        
-                        <li> 
-                            <a href="frutas.html">Frutas</a> 
-                        </li> 
+        <li>
+            <a href="dashboard.php">Dashboard</a>
+        </li>
 
-                        <li> 
-                            <a href="verduras.html">Verduras</a> 
+        <li>
+            <a href="produtos.php">Produtos</a>
 
-                        </li> 
+            <ul class="submenu">
+                <li><a href="pequena.php">Pequena</a></li>
+                <li><a href="media.php">Média</a></li>
+                <li><a href="grande.php">Grande</a></li>
+            </ul>
 
-                        <li>
-                            <a href="legumes.hml">Legumes</a>
-                        </li>
-                    </ul> 
-                </li> 
+        </li>
 
-                <li> 
-                    <a href="sobre.html">Sobre</a>
+        <li>
+            <a href="carrinho.php">
+                🛒 Minha cesta
+                (<span id="quantidade-carrinho">0</span>)
+            </a>
+        </li>
 
-                </li> 
-
-                <li> 
-                    <a href="contato.html">Contato</a> 
-
-                </li> 
-
-                <li> 
-                    <a href="login.html">Sair</a> 
-
-                </li> 
-
-            </ul>   
-        </nav>
+    </ul>
+</nav>
 </header>
 
 <main>
@@ -81,7 +68,7 @@
             <div class="card">
 
                 <div class="imagem-card">
-                    <img src="IMG/Cesta Pequena.png" alt="Cesta pequena">
+                    <img src="assets/IMG/Cesta Pequena.png" alt="Cesta pequena">
                 </div>
 
                 <h3>Cesta Pequena</h3>
@@ -98,14 +85,17 @@
                         <li> Alface</li>
                     </ul>
                 </div>
-            <button>adicionar</button>
+
+            <button onclick="adicionarCarrinho('Cesta Pequena', 35.00)">
+    🛒 Adicionar à cesta
+</button>
 
             </div>
             
             <div class="card">
 
                 <div class="imagem-card">
-                    <img src="IMG/Cesta Média.png" alt="Cesta média">
+                    <img src="assets/IMG/Cesta Média.png" alt="Cesta média">
                 </div>
 
                 <h3>Cesta Média</h3>
@@ -124,13 +114,17 @@
                         <li> Tomate</li>
                     </ul>
                 </div>
-             <button>adicionar</button>
+
+             <button onclick="adicionarCarrinho('Cesta Média', 55.00)">
+    🛒 Adicionar à cesta
+</button>
+
             </div>
 
             <div class="card">
 
                 <div class="imagem-card">
-                    <img src="IMG/Cesta Grande.png" alt="Cesta grande">
+                    <img src="assets/IMG/Cesta Grande.png" alt="Cesta grande">
                 </div>
 
                 <h3>Cesta Grande</h3>
@@ -151,7 +145,11 @@
                         <li> Brócolis</li>
                     </ul>
                 </div>
-                <button>adicionar</button>
+
+                <button onclick="adicionarCarrinho('Cesta Grande', 80.00)">
+    🛒 Adicionar à cesta
+</button>
+
             </div>
 
         </div>
@@ -164,5 +162,6 @@
     <p>© 2026 ORGÂNICA 🌱 - Produtos Naturais</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

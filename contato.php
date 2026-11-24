@@ -1,25 +1,27 @@
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
 
-    <title>ORGÂNICA - Produtos Naturais</title>
-
-    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css">
+        
 </head>
-
 <body>
 
-    <header>
+<header>
+    <div class="logo">
 
-       <div class="logo">
-            <h1>ORGÂNICA 🌱</h1>
-        </div>
+        <h1>Orgânica 🌱</h1>
 
-        <nav> 
+    </div>
 
+    <nav>
             <ul class="menu"> 
 
                 <li> 
@@ -47,7 +49,7 @@
                             <a href="verduras.html">Verduras</a> 
 
                         </li> 
-                        
+
                         <li>
                             <a href="legumes.hml">Legumes</a>
                         </li>
@@ -69,48 +71,28 @@
 
                 </li> 
 
-            </ul> 
-
+            </ul>    
         </nav>
 
-    </header>
+</header>
 
-    <main>
+<main>
+    <section class="contato">
 
-    <section id="home" class="inicio">
+        <h2>Nossos Contatos</h2> 
 
-        <div class="texto-inicio">
-
-            <h2>Produtos Frescos e Naturais</h2>
-
-            <button onclick="location.href='produtos.html'">
-    Conheça nossas cestas
-</button>
-   
-        </div>
-
-        <div class="imagem-inicio">
-            <img src="IMG/logo principal.png">
-        </div>
+        <h3>Fale conosco</h3>
+        
+        <p>📱 WhatsApp: (81) 99570-3865</p>
+        <p>📧 E-mail: contato@organica.com</p>
+        <p>Rua Teixeira de Brito, 286 - Recife - PE </p>
 
     </section>
+</main>
 
-    </main>
-
-    <section id="sobre" class="sobre">
-
-        <h2>Sobre a ORGÂNICA</h2>
-
-        <p>
-            A ORGÂNICA oferece frutas, verduras e legumes produtos selecionados para você e sua família.
-        </p>
-
-    </section>
-
-    <footer>
-        <p>© 2026 ORGÂNICA 🌱 - Produtos Naturais</p>
-    </footer>
+<footer>
+    <p>© 2026 ORGÂNICA 🌱 - Produtos Naturais</p>
+</footer>
 
 </body>
-
 </html>
