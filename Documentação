@@ -1,0 +1,63 @@
+#ORGÂNICA
+
+  A ORGÂNICA é um site desenvolvido para comercializar cestas de frutas, verduras e legumes, oferecendo aos clientes opções de tamanhos variados.
+
+ O objetivo é oferecer aos clientes uma maneira prática de conhecer e adquirir cestas de produtos naturais sem agrotóxicos.
+
+ Desenvolvido como projeto acadêmico do curso Técnico em Desenvolvimento de Sistemas da ETE Porto Digital.
+
+#Produtos
+
+Cestas de pequena.
+
+Cestas de média.
+
+Cestas de grande.
+
+Contendo nelas itens variados de frutas, legumes e verduras.
+
+#Funcionalidades
+
+Cadastro de usuários.
+
+Login e acesso ao sistema.
+
+Visualização dos produtos.
+
+Exibição de preços e imagens.
+
+Funcionalidade de adicionar produtos à cesta.
+
+Área administrativa, conforme funcionalidades implementadas.
+
+#Tecnologias utilizadas
+
+HTML
+
+CSS
+
+JavaScript
+
+PHP 8.2
+
+MySQL 8
+
+XAMPP
+
+Visual Studio Code
+
+#Como rodar
+1. Instale o XAMPP e ligue Apache e MySQL.
+2. Copie a pasta projeto-organica para `C:\xampp\htdocs.
+3. No phpMyAdmin, importe database/banco_organica.sql
+4. Acesse http://http://localhost/projeto-organica/index.php
+
+#Banco de dados
+Nome: banco_organica
+SGBD: MySQL
+
+Instituição
+Escola Técnica Estadual Porto Digital
+Curso: Técnico em Desenvolvimento de Sistemas
+Aluna: Alessandra Moreira SantosAno: 2026
+
